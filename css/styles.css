@@ -113,24 +113,46 @@ nav li {
 .left-price {
   float: left;
   padding: 30px;
-}
-
-.left-price img {
-  height: 100px;
+  width: 50%;
   margin: 0;
-  float: right;
-}
-
-.mjolnir-apple img {
-  width: 300px;
-  float: right;
 }
 
 #price {
   font-size: 3em;
+  text-align: center;
+  float: left;
 }
 
 #price::after {
   content: "  + tax";
   font-size: .3em;
+}
+
+.price-order button {
+  float: right;
+}
+
+.left-price img {
+  height: 100px;
+  margin: 0;
+}
+
+.mjolnir-apple {
+  position: relative;
+  width: 50%;
+  margin: 0;
+}
+
+.mjolnir-apple img {
+  position: absolute;
+  width: 100%;
+}
+
+.text-apple {
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  text-align: center;
+  font-size: .9em;
+  font-family: 'Source Sans Pro', sans-serif;
 }
