@@ -1,9 +1,136 @@
 
-/*GLOBAL STYLES*/
+/*///////////////////////       GLOBAL STYLES      ///////////////////////*/
 *,
 *::before,
 *::after {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+.cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+
+}
+
+.slant {
+    -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+    -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+    -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+    -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+    transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+}
+
+h2, h3 {
+  color: #023d5f;
+}
+
+h4 {
+  color: #bb954f;
+}
+
+/*//////////////////////////       HEADER      //////////////////////////*/
+header {
+  position: fixed;
+  width: 100%;
+  color: white;
+  top: 0;
+  display: inline-block;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.header-top {
+  background: #023d5f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#023d5f, #7ad2e0, #023d5f); /* Standard syntax */
+  min-height: 168px;
+}
+
+header img {
+  float: left;
+  margin-top: 28px;
+}
+
+#asot {
+  position: absolute;
+  width: 50px;
+  top: 70px;
+  left: 300px;
+  transform: rotate(-20deg);
+}
+
+header h1 {
+  text-align: center;
+  text-shadow: -5px 5px 5px #444;
+  padding: 20px 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header button {
+  float: right;
+  margin: 75px 5% 0 0;
+}
+
+nav {
+  background: #bb954f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#eddfa3, #bb954f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#eddfa3, #bb954f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#eddfa3, #bb954f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#eddfa3, #bb954f); /* Standard syntax */
+  text-align: center;
+  float: right;
+  width: 100%;
+  box-shadow: 0 10px 10px #999;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+/*///////////////////////       CONTAINER      ///////////////////////*/
+
+.container {
+  margin: 20% 10%;
+  position: relative;
+}
+
+/*///////////////////////       SPECIAL OFFER      ///////////////////////*/
+.special-offer {
+  position: relative;
+}
+
+.left-price {
+  float: left;
+  padding: 30px;
+}
+
+.left-price img {
+  height: 100px;
+  margin: 0;
+  float: right;
+}
+
+.mjolnir-apple img {
+  width: 300px;
+  float: right;
+}
+
+#price {
+  font-size: 3em;
+}
+
+#price::after {
+  content: "  + tax";
+  font-size: .3em;
 }
