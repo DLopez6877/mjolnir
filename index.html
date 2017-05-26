@@ -63,7 +63,7 @@
           </ul>
         </div><!--uses-content-->
       </div><!--uses-->
-      <div class="situations">
+      <div class="situations cf">
         <h1 class="slant">Mjolnir is useful for any situation!</h1>
         <div class="situation">
           <img src="img/badass.jpg" alt="lightning bolts coming out of mjolir">
@@ -90,75 +90,77 @@
           <h1>Smack Enemies Around</h1>
         </div>
       </div><!--situation -->
+    </div><!--container-->
+    <div class="breaker">
       <h1>This offer is not available in stores</h1>
       <h2>Fill out the form below to order a Mjolnir now!</h2>
-      <div class="form-container">
-        <form class="" action="index.html" method="post">
-          <div class="step1">
-            <div class="form-header">
-              <p>Step 1:</p>
-              <p>Select your order</p>
-            </div>
-            <p>How many mjolnirs would you like?</p>
-            <select class="quantity" name="quantity">
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-            </select>
+    </div>
+    <div class="form-container cf">
+      <form class="" action="index.html" method="post">
+        <div class="step">
+          <div class="form-header">
+            <p>Step 1:</p>
+            <p>Select your order</p>
           </div>
-          <div class="step2">
-            <div class="form-header">
-              <p>Step 2:</p>
-              <p>Review your order</p>
-            </div>
-            <table>
-              <tr>
-                <th>Item</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>S&H</th>
-              </tr>
-              <tr>
-                <td>Mjolnir</td>
-                <td><span id="quantityInput"></span></td>
-                <td><span id="priceInput"></span></td>
-                <td>$0.00</td>
-              </tr>
-              <tr>
-                <td>Free Mjolir</td>
-                <td>1</td>
-                <td>$0.00</td>
-                <td>$0.00</td>
-              </tr>
-              <tr>
-                <td>Free Keychain</td>
-                <td>1</td>
-                <td>$0.00</td>
-                <td>$0.00</td>
-              </tr>
-            </table>
+          <p>How many mjolnirs would you like?</p>
+          <select class="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="step">
+          <div class="form-header">
+            <p>Step 2:</p>
+            <p>Review your order</p>
           </div>
-          <div class="step3">
-            <div class="form-header">
-              <p>Step 3:</p>
-              <p>Enter your billing information</p>
-            </div>
-            <label for="name">*Full name</label>
-            <input type="text" name="name" id="name" placeholder="*Full Name" required>
-            <label for="address">*Address</label>
-            <input type="text" name="address" id="address" placeholder="*Address" required>
-            <label for="phone">*Phone</label>
-            <input type="number" name="phone" id="phone" placeholder="*Phone" required>
-            <label for="email">*E-mail</label>
-            <input type="email" name="email" id="email" placeholder="*E-mail" required>
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>S&H</th>
+            </tr>
+            <tr>
+              <td>Mjolnir</td>
+              <td><span id="quantityInput"></span></td>
+              <td><span id="priceInput"></span></td>
+              <td>$0.00</td>
+            </tr>
+            <tr>
+              <td>Free Mjolir</td>
+              <td>1</td>
+              <td>$0.00</td>
+              <td>$0.00</td>
+            </tr>
+            <tr>
+              <td>Free Keychain</td>
+              <td>1</td>
+              <td>$0.00</td>
+              <td>$0.00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="step">
+          <div class="form-header">
+            <p>Step 3:</p>
+            <p>Enter your billing information</p>
           </div>
-          <p id="req">* Indicates Required Field</p>
-          <button type="button" name="button" class="process-order">Process Order</button>
-        </form>
-        <img id="info-pic"src="img/info.jpg" alt="information about mjolnir">
-      </div><!--form-container-->
-    </div><!--container-->
+          <label for="name">*Full name</label>
+          <input type="text" name="name" id="name" placeholder="*Full Name" required>
+          <label for="address">*Address</label>
+          <input type="text" name="address" id="address" placeholder="*Address" required>
+          <label for="phone">*Phone</label>
+          <input type="number" name="phone" id="phone" placeholder="*Phone" required>
+          <label for="email">*E-mail</label>
+          <input type="email" name="email" id="email" placeholder="*E-mail" required>
+        </div>
+        <p id="req">* Indicates Required Field</p>
+        <button type="button" name="button" class="process-order">Process Order</button>
+      </form>
+      <img id="info-pic"src="img/info.jpg" alt="information about mjolnir">
+    </div><!--form-container-->
     <footer>
 
     </footer>
