@@ -35,6 +35,15 @@ sup {
     top: -0.4em;
 }
 
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover {
+  color: #023d5f;
+}
+
 /*buttons*/
 .order-circle {
   width: 60px;
@@ -73,10 +82,14 @@ sup {
 button:hover {
   background: #f7f2f6;
   background: radial-gradient(#f7f2f6, #bb954f);
-
-  color: blue;
+  color: #023d5f;
 }
 
+button:active {
+  background: #f7f2f6;
+  background: radial-gradient(#f7f2f6, #5e4d2e);
+  color: black;
+}
 
 /*//////////////////////////         HEADER        //////////////////////////*/
 header {
