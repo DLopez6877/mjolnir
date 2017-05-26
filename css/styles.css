@@ -92,10 +92,15 @@ nav {
   box-shadow: 0 10px 10px #999;
 }
 
+nav ul {
+  margin: 2px;
+}
+
 nav li {
   list-style: none;
   display: inline-block;
   padding: 0px 30px;
+  font-size: 1.7em;
 }
 
 /*///////////////////////       CONTAINER      ///////////////////////*/
@@ -103,11 +108,13 @@ nav li {
 .container {
   margin: 20% 10%;
   position: relative;
+  box-shadow: 0 0 70px #999;
 }
 
 /*///////////////////////       SPECIAL OFFER      ///////////////////////*/
 .special-offer {
   position: relative;
+  text-align: center;
 }
 
 .left-price {
@@ -155,4 +162,75 @@ nav li {
   text-align: center;
   font-size: .9em;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+#bind {
+  width: 100%;
+  text-align: center;
+  background: #023d5f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#023d5f, #7ad2e0, #023d5f); /* Standard syntax */
+  color: white;
+  text-shadow: -5px 5px 5px #444;
+}
+
+/*///////////////////////            USES             ///////////////////////*/
+.uses {
+  position: relative;
+}
+
+.uses h2 {
+  text-align: right;
+  font-size: 2.5em;
+  margin-right: 20px;
+}
+
+.uses img {
+  width: 28%;
+  margin: 2%;
+  vertical-align: middle;
+}
+
+.uses ul {
+  position: absolute;
+  width: 30%;
+  top: 35%;
+  right: 0;
+}
+
+.uses li {
+  margin-top: 5px;
+  font-weight: 800;
+}
+
+.uses button {
+  margin-top: 30px;
+}
+
+/*///////////////////////         SITUATIONS          ///////////////////////*/
+
+.situations h1:first-child {
+  text-align: center;
+  color: #bb954f;
+  font-size: 4em;
+}
+
+.situation {
+  position: relative;
+  width: 33%;
+  padding: 2.5%;
+  float: left;
+  text-align: center;
+}
+
+.situation img {
+  width: 100%;
+}
+
+.situation h1:last-child{
+  margin: 4px 0;
+  font-weight: 300;
+  color: #023d5f;
 }
