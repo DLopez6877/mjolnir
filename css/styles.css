@@ -14,6 +14,10 @@
   clear: both;
 }
 
+body{
+  width: 100%;
+}
+
 .slant {
     -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
     -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
@@ -122,11 +126,6 @@ header img {
   top: 70px;
   left: 300px;
   transform: rotate(-20deg);
-}
-
-.wrapper {
-  position: relative;
-  height: 168px;
 }
 
 header h1 {
@@ -493,4 +492,12 @@ input::placeholder {
   .situations h1 {
     font-size: 20px;
   }
+}
+
+footer {
+  border-top: thin solid black;
+  text-align: right;
+  font-size: .6em;
+  color: #333;
+  padding-right: 30px;
 }
