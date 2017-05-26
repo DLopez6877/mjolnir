@@ -14,16 +14,13 @@
   clear: both;
 }
 
-body {
-
-}
-
 .slant {
     -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
     -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
     -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
     -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
     transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+    margin: 68px 0;
 }
 
 h2, h3 {
@@ -67,12 +64,16 @@ header img {
   transform: rotate(-20deg);
 }
 
+.wrapper {
+  position: relative;
+  height: 168px;
+}
+
 header h1 {
   text-align: center;
   text-shadow: -5px 5px 5px #444;
-  padding: 20px 0;
+  padding: 50px 0;
   display: table-cell;
-  vertical-align: middle;
 }
 
 header button {
@@ -324,4 +325,92 @@ label[for=phone] {
 
 label[for=email] {
   margin-left: 30px;
+}
+
+/*///////////////////////        MEDIA QUERIES         ///////////////////////*/
+@media screen and (max-width: 1130px) {
+  header h1 {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+  header {
+    position: relative;
+  }
+  header button {
+    display: none;
+  }
+  form {
+    width: 100%;
+  }
+
+  .form-container img {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .text-apple {
+    top: 300px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .uses button {
+    display:none
+  }
+  header h1{
+    display: none;
+  }
+  header img {
+    margin-left: 30px;
+  }
+  #asot {
+    top: -20px;
+    left: 290px;
+  }
+  .left-price {
+    width: 100%;
+  }
+  .text-apple, .mjolnir-apple {
+    display: none;
+  }
+
+  .container {
+    padding-top: 50px;
+  }
+
+  .left-price h2 {
+    margin:0;
+  }
+}
+
+@media screen and (max-width: 673px) {
+  .uses h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+  }
+  .uses-content img {
+    width: 100%;
+  }
+  .uses-content ul {
+    width: 100%;
+    position: relative;
+  }
+  .situations h1:first-child {
+    margin: 0;
+    font-size: 30px;
+  }
+  nav li {
+    font-size: 20px;
+  }
+  .situations h1 {
+    font-size: 20px;
+  }
 }
