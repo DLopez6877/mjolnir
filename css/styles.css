@@ -253,6 +253,7 @@ nav li {
 
 .form-container {
   margin: 0% 10% 5% 10%;
+  width: 80%;
   position: relative;
   box-shadow: 0 0 70px #999;
   padding: 20px 2.5%
@@ -266,4 +267,57 @@ form {
 .form-container img {
   width: 47.5%;
   float: right;
+}
+
+.step {
+  border: thin solid black;
+  margin-bottom: 27px;
+  box-shadow: 3px 3px 10px black;
+  padding: 10px;
+}
+
+.form-header {
+  background-color: #023d5f;
+  color: white;
+  margin: -10px -10px 10px -10px;
+}
+
+.form-header p {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.form-header p:first-of-type {
+  font-weight: 900;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: thin solid #7ad2e0;
+  padding: 2px 5px;
+}
+
+th:first-child {
+  width: 70%;
+}
+
+.form-control {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+label[for=address] {
+  margin-left: 10px;
+}
+
+label[for=phone] {
+  margin-left: 22px;
+}
+
+label[for=email] {
+  margin-left: 30px;
 }

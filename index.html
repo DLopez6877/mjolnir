@@ -102,7 +102,7 @@
             <p>Step 1:</p>
             <p>Select your order</p>
           </div>
-          <p>How many mjolnirs would you like?</p>
+          <p>How many Mjolnirs would you like?</p>
           <select class="quantity" name="quantity">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -129,7 +129,7 @@
               <td>$0.00</td>
             </tr>
             <tr>
-              <td>Free Mjolir</td>
+              <td>Free Mjolnir</td>
               <td>1</td>
               <td>$0.00</td>
               <td>$0.00</td>
@@ -147,17 +147,25 @@
             <p>Step 3:</p>
             <p>Enter your billing information</p>
           </div>
-          <label for="name">*Full name</label>
-          <input type="text" name="name" id="name" placeholder="*Full Name" required>
-          <label for="address">*Address</label>
-          <input type="text" name="address" id="address" placeholder="*Address" required>
-          <label for="phone">*Phone</label>
-          <input type="number" name="phone" id="phone" placeholder="*Phone" required>
-          <label for="email">*E-mail</label>
-          <input type="email" name="email" id="email" placeholder="*E-mail" required>
+          <div class="form-control">
+            <label for="name">*Full name: </label>
+            <input type="text" name="name" id="name" placeholder="*Full Name" required>
+          </div>
+          <div class="form-control">
+            <label for="address">*Address: </label>
+            <input type="text" name="address" id="address" placeholder="*Address" required>
+          </div>
+          <div class="form-control">
+            <label for="phone">*Phone: </label>
+            <input type="number" name="phone" id="phone" placeholder="*Phone" required>
+          </div>
+          <div class="form-control">
+            <label for="email">*Email: </label>
+            <input type="email" name="email" id="email" placeholder="*Email" required>
+          </div>
         </div>
         <p id="req">* Indicates Required Field</p>
-        <button type="button" name="button" class="process-order">Process Order</button>
+        <button type="submit" name="button" class="process-order">Process Order</button>
       </form>
       <img id="info-pic"src="img/info.jpg" alt="information about mjolnir">
     </div><!--form-container-->
