@@ -291,6 +291,10 @@ form {
   font-weight: 900;
 }
 
+select {
+  padding: 3px;
+  border: thin solid black;
+}
 table {
   border-collapse: collapse;
 }
