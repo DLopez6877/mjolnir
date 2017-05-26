@@ -14,6 +14,18 @@ Must Include:_
 * At least one table or form field styled with CSS (e.g. sizing chart, color options, order form…)
 * A gallery of smaller images (e.g. similar products...)_
 
+## Objectives
+
+* Incorporates all required elements (see above)
+* Use of at least one pseudo class and one pseudo element
+* Use of at least 3 different types of selectors
+* Appropriate elements are positioned using absolute & relative positioning
+* Gallery images make use of the float property
+* Elements use box-sizing: border-box;
+* Project is in a polished, portfolio-quality state.
+* Required content is in place by 5:00pm Friday deadline.
+* Project demonstrates understanding of this week's concepts. If prompted, you can discuss your code with an instructor using the correct terminology.
+
 ## Setup/Installation Requirements
 
 * _Click on gh-pages link to open site_
