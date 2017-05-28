@@ -30,13 +30,11 @@
       <div class="special-offer">
         <div class="left-price">
           <h2 class="slant">Special Double Offer</h2>
-          <h3>BUY ONE GET ONE FREE</h3>
-          <h3>order in the next 10 minutes and get free shipping</h3>
-          <h4>Plus a free keychain!</h4>
+          <h4>BUY TWO GET ONE FREE</h4>
+          <h3>order in the next <span id="minutes">10</span>:<span id="seconds"></span> minutes and get a free keychain</h3>
           <div class="price-order">
             <div class="price-div">
-              <h1 id="price">$20<sup>00</sup></h1>
-              <p><i>just pay seperate S&H</i></p>
+              <h1 id="price">$19<sup>95</sup></h1>
             </div>
             <img src="img/best-in-class.png" alt="best in class for new investors">
             <button type="button" name="button" class="order-circle">Order Now</button>
@@ -130,11 +128,11 @@
               <td>Mjolnir</td>
               <td><span id="quantityInput">1</span></td>
               <td><span id="priceInput">$20.00</span></td>
-              <td>$0.00</td>
+              <td><span id="shipping">$5.65</span></td>
             </tr>
             <tr>
               <td>Free Mjolnir</td>
-              <td>1</td>
+              <td id="quantityFree">0</td>
               <td>$0.00</td>
               <td>$0.00</td>
             </tr>
@@ -143,6 +141,10 @@
               <td>1</td>
               <td>$0.00</td>
               <td>$0.00</td>
+            </tr>
+            <tr>
+              <th colspan="3">Total</th>
+              <td><span id="totalPrice">$25.60</span></td>
             </tr>
           </table>
         </div>
@@ -170,11 +172,36 @@
         </div>
         <p id="req">* Indicates Required Field</p>
         <button type="submit" name="button" class="order-wide">Process Order</button>
+        <p>By clicking Process Order, your credit card will be charged the amount above. Click only once.</p>
+        <img id="secured" src="img/secured.png" alt="secured website">
       </form>
       <img id="info-pic"src="img/info.jpg" alt="information about mjolnir">
+      <img src="img/engrave.jpg" alt="inscription on side of mjolnir">
+      <img src="img/keychain.jpg" alt="mjolnir keychain">
+      <div class="cf details">
+        <h3>OFFER DETAILS:</h3>
+        <p>Order today, and you will receive a total of 1 <strong>Mjolnir</strong> and 1 keychain for only $19.95 and $5.65 S&H, plus FREE second <strong>Mjolnir</strong> with minimum purchase of 2 <strong>Mjolnir</strong>. </p>
+        <p>Sales Tax will be applied to orders shipping to CA & FL.</p>
+        <br>
+        <p><strong>Mjolnir</strong> is forged by dwarves in the heart of a dying star. Primarily made out of Uru metal and gives mystical enchantments by Odin. Mystical abilities include weather control, flight, worthiness, and teleportation.</p>
+        <p>Inscription: "Whoever holds this hammer, if he be worthy, shall possess the power of... Thor." Wrapped in unbreakable leather that ends in a loop. When deliberately thrown it will return despite any obstacles or distance.</p>
+      </div>
     </div><!--form-container-->
     <footer>
-      <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Mkolnir, LLC. All rights reserved</p>
+      <nav>
+        <ul>
+          <li><a href="http://www.piilossa.com/">Home</a></li>
+          <li><a href="http://www.piilossa.com/">Success Stories</a></li>
+          <li><a href="http://www.piilossa.com/">Frequently Asked Question</a></li>
+          <li><a href="http://www.piilossa.com/">Customer Service</a></li>
+          <li><a href="http://www.piilossa.com/">Privacy Policy</a></li>
+          <li><a href="http://www.piilossa.com/">Site Map</a></li>
+          <li><a href="http://www.piilossa.com/">Limited Warranty</a></li>
+          <li><a href="http://www.piilossa.com/">Order Now</a></li>
+        </ul>
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Mjolnir, LLC. All rights reserved</p>
+        <p>Web by Daniel Lopez</p>
+      </nav>
     </footer>
   </body>
 </html>

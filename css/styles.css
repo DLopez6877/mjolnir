@@ -14,10 +14,6 @@
   clear: both;
 }
 
-body{
-  width: 100%;
-}
-
 .slant {
     -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
     -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
@@ -69,7 +65,7 @@ a:hover {
 .order-wide {
   width: 180px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 50px;
   background: #b25244;
   background: linear-gradient(#f7f2f6, #bb954f);
   color: white;
@@ -90,9 +86,14 @@ button:hover {
 }
 
 button:active {
-  background: #f7f2f6;
-  background: radial-gradient(#f7f2f6, #5e4d2e);
-  color: black;
+  background: #023d5f;
+  background: radial-gradient(#f7f2f6, #023d5f);
+  color: white;
+}
+
+[type="submit"] {
+  display: table;
+  margin: 0 auto;
 }
 
 /*//////////////////////////         HEADER        //////////////////////////*/
@@ -154,13 +155,14 @@ nav {
 
 nav ul {
   margin: 2px;
+  padding: 5px 0;
 }
 
 nav li {
   list-style: none;
   display: inline-block;
   padding: 0px 30px;
-  font-size: 1.7em;
+  font-size: 1.5em;;
 }
 
 /*///////////////////////           CONTAINER          ///////////////////////*/
@@ -192,7 +194,7 @@ nav li {
 }
 
 #price::after {
-  content: "  + tax";
+  content: "  + S&H";
   font-size: .3em;
 }
 
@@ -227,6 +229,7 @@ nav li {
 
 #bind {
   width: 100%;
+  padding: 5px;
   text-align: center;
   background: #023d5f; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Safari 5.1 to 6.0 */
@@ -312,11 +315,11 @@ nav li {
 }
 
 .form-container {
-  margin: 0% 10% 5% 10%;
+  margin: 0% 10% 0 10%;
   width: 80%;
   position: relative;
   box-shadow: 0 0 70px #999;
-  padding: 20px 2.5%
+  padding: 20px 2.5% 50px 2.5%;
 }
 
 form {
@@ -328,7 +331,7 @@ form {
   width: 47.5%;
   float: right;
 }
-
+/*///////////////////////            STEPS             ///////////////////////*/
 .step {
   border: thin solid black;
   margin-bottom: 27px;
@@ -355,17 +358,34 @@ select {
   padding: 3px;
   border: thin solid black;
 }
+
+/*///////////////////////            TABLE             ///////////////////////*/
 table {
   border-collapse: collapse;
+  width: 100%;
+}
+
+th:not([colspan]) {
+  text-align: left;
+  color: white;
+  background: #bb954f;
+}
+
+[colspan] {
+  text-align: right;
 }
 
 th, td {
   border: thin solid #7ad2e0;
-  padding: 2px 5px;
+  padding: 4px 5px;
 }
 
 th:first-child {
   width: 70%;
+}
+
+th:nth-child(n+2) {
+  width: 10%;
 }
 
 .form-control {
@@ -391,19 +411,71 @@ input::placeholder {
   color: #555;
 }
 
-#req::before {
-  content: ">>>>  "
-}
-
+/*///////////////////////            BELOW             ///////////////////////*/
 #req {
   font-style: italic;
-  font-size: .8em;
-  color: #555;
-  float: right;
-  margin: 0;
+  color: red;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px dotted #555;
+  border-bottom: 1px dotted #555;
+  font-size: .9em;
 }
-#req::after {
-  content: "  <<<<"
+
+form p:nth-child(6) {
+  font-size: .9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#secured {
+  width: 100px;
+  float: none;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.details {
+    padding: 15px;
+    border: thin solid #ccc;
+    font-size: .8em;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.details h3{
+  margin-top: 0;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  font-size: .6em;
+  color: white;
+  background: #023d5f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#023d5f, #7ad2e0, #023d5f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#023d5f, #7ad2e0, #023d5f); /* Standard syntax */
+}
+
+footer li {
+  padding: 0 15px;
+  border-right: 1px solid white;
+}
+
+footer li:last-child {
+  border-right: none;
+}
+
+footer nav {
+  background: inherit;
+  margin-bottom: 25px;
+  box-shadow: none;
+}
+
+footer p {
+  margin-top: 0;
 }
 
 /*///////////////////////        MEDIA QUERIES         ///////////////////////*/
@@ -420,6 +492,11 @@ input::placeholder {
   }
   header {
     position: relative;
+  }
+
+  body {
+    margin: 0;
+    padding: 25px;
   }
   header button {
     display: none;
@@ -492,12 +569,4 @@ input::placeholder {
   .situations h1 {
     font-size: 20px;
   }
-}
-
-footer {
-  border-top: thin solid black;
-  text-align: right;
-  font-size: .6em;
-  color: #333;
-  padding-right: 30px;
 }
